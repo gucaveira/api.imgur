@@ -1,4 +1,4 @@
-package com.example.imgur.remote
+package com.example.imgur.network.remote
 
 import com.example.imgur.model.DataImgur
 import com.example.imgur.network.ImgurApi
