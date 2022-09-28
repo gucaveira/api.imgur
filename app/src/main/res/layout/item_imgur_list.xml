@@ -7,7 +7,7 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/ImageGifs"
+        android:id="@+id/Image"
         android:layout_width="120dp"
         android:layout_height="180dp"
         android:scaleType="matrix"

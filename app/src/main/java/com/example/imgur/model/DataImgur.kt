@@ -1,6 +1,6 @@
 package com.example.imgur.model
 
-data class DataGif(
+data class DataImgur(
     val data: List<Data>?,
 )
 
