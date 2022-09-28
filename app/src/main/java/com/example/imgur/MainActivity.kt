@@ -18,11 +18,19 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.flipperView.displayedChild = FLIPPER_CHILD_POSITION_LOADING
 
         viewModel.fetchImage("cats")
 
         viewModel.listImageLiveData.observe(this) {
             binding.imageList.adapter = AdapterImage(it)
+            binding.flipperView.displayedChild = FLIPPER_CHILD_POSITION_IMAGE
         }
+    }
+
+    companion object {
+        private const val FLIPPER_CHILD_POSITION_LOADING = 0
+        private const val FLIPPER_CHILD_POSITION_IMAGE = 1
+
     }
 }
